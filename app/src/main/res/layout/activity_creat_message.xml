@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/chat_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#007FC4"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/user"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/chat_person_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text=":שלום"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <!--<EditText
+        android:id="@+id/ImeiId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:singleLine="true"
+        android:inputType="number"
+        android:hint="Imei Number"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"/>-->
+
+    <EditText
+        android:textColor="#000000"
+        android:singleLine="true"
+        android:id="@+id/SubjectId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="20dp"
+        android:hint="Subject"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"/>
+
+
+    <EditText
+        android:textColor="#000000"
+        android:id="@+id/chatBoxId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="Enter Text Here"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/submitId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text="Submit"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"/>
+</LinearLayout>
